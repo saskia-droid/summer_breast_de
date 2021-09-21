@@ -1,5 +1,7 @@
 
-# Outputs of Hisat2 when mapping the reads to the reference genome (find in the error files)
+# Outputs of Hisat2 when mapping the reads to the reference genome 
+
+(find in the error files)
 
 ## Normal1 sample
 
