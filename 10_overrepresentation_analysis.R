@@ -41,3 +41,15 @@ egoBP <- clusterProfiler::enrichGO( gene          = genes,
                                     keyType       = 'ENSEMBL')
 #head(egoBP)
 dotplot(egoBP, showCategory=20)
+
+egoALL <- clusterProfiler::enrichGO( gene          = genes,
+                                    universe      = universe,
+                                    OrgDb         = org.Hs.eg.db,
+                                    ont           = "ALL", 
+                                    pAdjustMethod = "BH",
+                                    pvalueCutoff  = 0.01,
+                                    qvalueCutoff  = 0.05,
+                                    readable      = TRUE,
+                                    keyType       = 'ENSEMBL')
+#head(egoALL)
+dotplot(egoALL, showCategory=20)
